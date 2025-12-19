@@ -1,0 +1,29 @@
+Ah! I see what's happening. The error message on your screenshot says:
+
+> "Sorry, we can't open this file because the format is currently unsupported, or the file is corrupted. Error Code: 0x80070057"
+
+This means Windows (or whatever viewer you’re using) **cannot read `mesh-bg.png`**, either because:
+
+1. The file is **corrupted** — the data inside the PNG is broken.
+2. The file **extension is wrong** — maybe it’s named `.png` but is actually something else.
+3. The file is in a **non-standard PNG format** that your viewer doesn’t support.
+
+Here’s what you can do:
+
+### Quick Fixes
+
+1. **Try another viewer**
+
+   * Open it in **Paint**, **Photoshop**, **GIMP**, or a browser like Chrome/Edge. Sometimes they handle slightly corrupted PNGs better.
+2. **Re-download or re-export**
+
+   * If you got the file from the internet or someone else, try downloading it again. If it’s from a design tool (Figma, Canva, etc.), export it again.
+3. **Check the file type**
+
+   * Right-click → Properties → Details → check format.
+   * Or open in a text editor: a valid PNG should start with `‰PNG`. If not, it’s probably corrupted or misnamed.
+4. **Repair the PNG**
+
+   * Use online tools like [ezgif.com/repair](https://ezgif.com/repair) to try fixing it.
+
+If you want, I can **check your `mesh-bg.png` file** now and see if it’s corrupted or still recoverable. Do you want me to do that?
